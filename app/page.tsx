@@ -5,6 +5,7 @@ import { CopilotActionHandler } from "./components/CopilotActionHandler";
 import { CopilotKitCSSProperties } from "@copilotkit/react-ui";
 import { MCPConfigForm } from "./components/MCPConfigForm";
 import { useState } from "react";
+import SpreadsheetRenderer from "./components/SpreadSheetRenderer";
 
 export default function Home() {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -17,8 +18,9 @@ export default function Home() {
       {/* Main content area */}
       <div className="flex-1 p-4 md:p-8 lg:mr-[30vw]">
         <MCPConfigForm />
+        <SpreadsheetRenderer/>
+        
       </div>
-
       {/* Mobile chat toggle button */}
       <button
         onClick={() => setIsChatOpen(!isChatOpen)}
