@@ -42,6 +42,7 @@ export const ToolCallRenderer: React.FC<ToolCallRendererProps> = ({
 
   return (
     <div className="my-2 rounded-lg border border-gray-200 overflow-hidden shadow-sm">
+      <p>Tool Call Renderer</p>
       {/* Header - always visible */}
       <div 
         className="flex items-center justify-between p-3 bg-gray-50 cursor-pointer hover:bg-gray-100 transition-colors"
