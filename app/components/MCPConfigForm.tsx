@@ -235,7 +235,7 @@ export function MCPConfigForm({ showSpreadsheet, setShowSpreadsheet }: { showSpr
               onClick={() => setShowSpreadsheet(!showSpreadsheet)}
               className="w-full sm:w-auto px-3 py-1.5 bg-gray-800 text-white rounded-md text-sm font-medium hover:bg-gray-700 flex items-center gap-1 justify-center"
             >
-              {showSpreadsheet ? 'Hide Spreadsheet' : 'Enable Spreadsheet'}
+              {showSpreadsheet ? 'Hide Spreadsheet' : 'Show Spreadsheet'}
             </button>
             <button
               onClick={() => setShowAddServerForm(true)}
