@@ -16,7 +16,7 @@ const SpreadsheetRenderer=()=>{
     
       const [selectedSpreadsheetIndex, setSelectedSpreadsheetIndex] = useState(0);
       return (
-        <div className="max-w-5xl mx-auto space-y-6" style={{maxWidth:"60%"}}>
+        <div className="max-w-5xl mx-auto space-y-6">
           <SingleSpreadsheet
             spreadsheet={spreadsheets[selectedSpreadsheetIndex]}
             setSpreadsheet={(spreadsheet) => {
