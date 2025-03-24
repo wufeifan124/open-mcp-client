@@ -1,4 +1,4 @@
-
+"use client"
 import React,{useState} from "react"
 import { SpreadsheetData } from "../types";
 import SingleSpreadsheet from "./SingleSpreadsheet";

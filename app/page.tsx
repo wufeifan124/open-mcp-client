@@ -5,7 +5,8 @@ import { CopilotActionHandler } from "./components/CopilotActionHandler";
 import { CopilotKitCSSProperties } from "@copilotkit/react-ui";
 import { MCPConfigForm } from "./components/MCPConfigForm";
 import { useState } from "react";
-import SpreadsheetRenderer from "./components/SpreadSheetRenderer";
+import SpreadsheetRenderer from "./components/SpreadsheetRenderer";
+import { INSTRUCTIONS } from "./instructions";
 
 export default function Home() {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -73,9 +74,10 @@ export default function Home() {
       >
         <CopilotChat
           className="h-full flex flex-col"
-          instructions={
-            "You are assisting the user as best as you can. Answer in the best way possible given the data you have."
-          }
+          // instructions={
+          //   "You are assisting the user as best as you can. Answer in the best way possible given the data you have."
+          // }
+          instructions={INSTRUCTIONS}
           labels={{
             title: "MCP Assistant",
             initial: "Need any help?",
