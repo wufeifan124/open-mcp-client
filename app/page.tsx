@@ -5,11 +5,12 @@ import { CopilotActionHandler } from "./components/CopilotActionHandler";
 import { CopilotKitCSSProperties } from "@copilotkit/react-ui";
 import { MCPConfigForm } from "./components/MCPConfigForm";
 import { useState } from "react";
-import SpreadsheetRenderer from "./components/SpreadsheetRenderer";
+import SpreadsheetRenderer from "./components/SpreadSheetRenderer";
 import { INSTRUCTIONS } from "./instructions";
 
 export default function Home() {
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [showSpreadsheet, setShowSpreadsheet] = useState(false);
 
   return (
     <div className="min-h-screen bg-gray-50 flex relative">
@@ -18,9 +19,9 @@ export default function Home() {
 
       {/* Main content area */}
       <div className="flex-1 p-4 md:p-8 lg:mr-[30vw]">
-        <MCPConfigForm />
-        <SpreadsheetRenderer/>
-        
+        <MCPConfigForm showSpreadsheet={showSpreadsheet}
+          setShowSpreadsheet={setShowSpreadsheet} />
+        {showSpreadsheet && <SpreadsheetRenderer />}
       </div>
       {/* Mobile chat toggle button */}
       <button
