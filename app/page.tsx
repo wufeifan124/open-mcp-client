@@ -5,7 +5,7 @@ import { CopilotActionHandler } from "./components/CopilotActionHandler";
 import { CopilotKitCSSProperties } from "@copilotkit/react-ui";
 import { MCPConfigForm } from "./components/MCPConfigForm";
 import { useState } from "react";
-import SpreadsheetRenderer from "./components/SpreadSheetRenderer";
+import SpreadsheetRenderer from "./components/SpreadsheetRenderer";
 import { INSTRUCTIONS } from "./instructions";
 
 export default function Home() {
