@@ -1,4 +1,4 @@
-https://github.com/user-attachments/assets/f72e1f7d-3c84-4429-a465-23dff3d3bd63
+https://github.com/user-attachments/assets/364b6705-14d4-4e6d-bea7-fb9f12664fab
 
 
 # Getting Started
@@ -13,6 +13,7 @@ Add the following inside `.env` at the root:
 
 ```sh
 LANGSMITH_API_KEY=lsv2_...
+OPENAI_API_KEY=sk-...
 ```
 
 Next, create another `.env` file inside the `agent` folder:
@@ -27,6 +28,20 @@ Add the following inside `agent/.env`:
 ```sh
 OPENAI_API_KEY=sk-...
 LANGSMITH_API_KEY=lsv2_...
+```
+
+## Set Up Poetry:
+
+Poetry is used for dependency management in the agent service. To install Poetry, run:
+
+```sh
+pip install poetry
+```
+
+To verify the installation, run:
+
+```sh
+poetry --version
 ```
 
 ## Development
