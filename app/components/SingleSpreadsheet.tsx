@@ -3,7 +3,7 @@ import {
   useCopilotAction,
   useCopilotReadable,
 } from "@copilotkit/react-core";
-import React, { useState } from "react";
+import React from "react";
 import Spreadsheet from "react-spreadsheet";
 import { canonicalSpreadsheetData } from "../utils/canonicalSpreadsheetData";
 import { SpreadsheetData, SpreadsheetRow } from "../types";
@@ -72,6 +72,7 @@ const SingleSpreadsheet = ({ spreadsheet, setSpreadsheet }: MainAreaProps) => {
     handler: ({ rows, title }) => {
       // Do nothing.
       // The preview component will optionally handle committing the changes.
+      console.log(rows, title)
     },
   });
 
@@ -137,7 +138,7 @@ const SingleSpreadsheet = ({ spreadsheet, setSpreadsheet }: MainAreaProps) => {
           data={spreadsheet.rows}
           onChange={(data) => {
             console.log("data", data);
-            setSpreadsheet({ ...spreadsheet, rows: data as any });
+            setSpreadsheet({ ...spreadsheet, rows: data as SpreadsheetRow[] });
           }}
         />
         <button
