@@ -13,8 +13,8 @@ const SpreadsheetRenderer=()=>{
           ],
         },
       ]);
-    
-      const [selectedSpreadsheetIndex, setSelectedSpreadsheetIndex] = useState(0);
+      // const [selectedSpreadsheetIndex, setSelectedSpreadsheetIndex] = useState(0);
+      const [selectedSpreadsheetIndex] = useState(0);
       return (
         <div className="max-w-5xl mx-auto space-y-6">
           <SingleSpreadsheet
