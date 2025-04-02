@@ -1,6 +1,5 @@
 import {
     CopilotRuntime,
-    ExperimentalEmptyAdapter,
     copilotRuntimeNextJSAppRouterEndpoint,
     langGraphPlatformEndpoint,
     LangChainAdapter
@@ -9,7 +8,6 @@ import { NextRequest } from "next/server";
 import { ChatOpenAI } from "@langchain/openai"
 
 // You can use any service adapter here for multi-agent support.
-// const serviceAdapter = new ExperimentalEmptyAdapter();
 const serviceAdapter = new LangChainAdapter({
     chainFn: async ({ messages, tools }) => {
       return model.bindTools(tools, { strict: true }).stream(messages);
