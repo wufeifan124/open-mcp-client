@@ -27,7 +27,9 @@ LANGSMITH_API_KEY=lsv2_...
 OPENAI_API_KEY=sk-...
 ```
 
-Next, create another `.env` file inside the `agent` folder:
+Next, navigate to the `agent` folder and create another `.env` file:
+
+
 
 ```sh
 cd agent
@@ -43,13 +45,15 @@ LANGSMITH_API_KEY=lsv2_...
 
 ## Set Up Poetry:
 
-Poetry is used for dependency management in the agent service. To install Poetry, run:
+Poetry manages dependencies for the agent service. Install it with:
+
 
 ```sh
 pip install poetry
 ```
 
-To verify the installation, run:
+Verify the installation by running:
+
 
 ```sh
 poetry --version
@@ -57,7 +61,8 @@ poetry --version
 
 ## Development
 
-We recommend running the **frontend and agent separately** in different terminals to debug errors and logs:
+For easier debugging, run the `frontend` and `agent` in separate terminals:
+
 
 ```bash
 # Terminal 1 - Frontend
@@ -67,17 +72,23 @@ pnpm run dev-frontend
 pnpm run dev-agent
 ```
 
-Alternatively, you can run both services together with:
+Alternatively, launch both services together:
+
 
 ```bash
 pnpm run dev
 ```
 
-Then, open [http://localhost:3000](http://localhost:3000) in your browser.
+Visit [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
 
 ## Architecture
 
-The codebase is split into two main parts:
+The codebase is organized into two primary components:
 
-1. `/agent` **folder** – A LangGraph agent that connects to MCP servers and calls their tools.
-2. `/app` **folder** – A frontend application using CopilotKit for UI and state synchronization.
+
+- **Frontend** -  Handles the user interface.
+- **Agent** - Manages the core functionality.
+
+## License
+Distributed under the MIT License. See LICENSE for more info.
