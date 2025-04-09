@@ -1,15 +1,26 @@
+<div align="center">
+  
+# Open MCP Client
+
+![CopilotKit-Banner](https://github.com/user-attachments/assets/8167c845-0381-45d9-ad1c-83f995d48290)
+</div>
+
 https://github.com/user-attachments/assets/364b6705-14d4-4e6d-bea7-fb9f12664fab
 
 
 # Getting Started
 
-## Set Up Environment Variables:
+## Set Up Environment Variables 🌎
+Create a `.env` file at the root of your project:
+
+
 
 ```sh
 touch .env
 ```
 
-Add the following inside `.env` at the root:
+Add the following to `.env`:
+
 
 ```sh
 LANGSMITH_API_KEY=lsv2_...
