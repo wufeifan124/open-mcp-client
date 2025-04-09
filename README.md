@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/364b6705-14d4-4e6d-bea7-fb9f12664fab
 
 # Getting Started
 
-## Set Up Environment Variables 🌎
+## Set Up Environment Variables 
 Create a `.env` file at the root of your project:
 
 
